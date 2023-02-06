@@ -1,0 +1,7 @@
+.catalog {
+  @apply flex flex-wrap gap-8;
+}
+
+.heading {
+  @apply text-xl text-black gdark:text-white mb-5;
+}

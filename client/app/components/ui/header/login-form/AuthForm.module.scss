@@ -1,0 +1,23 @@
+.wrapper {
+  @apply relative inline-flex;
+
+  .form {
+    @apply p-4 absolute right-2 w-60 z-20 rounded-lg gdark:bg-zinc-900 gdark:opacity-75;
+    top: calc(100% + 1.4rem);
+    background-color: #dbe0f0;
+
+    .register {
+      @apply text-gray-400 bg-transparent font-light mt-2 text-center w-full gdark:text-white;
+    }
+
+    .loginButton {
+      @apply mt-5 mb-1 text-center;
+    }
+  }
+
+  .button {
+    @apply shadow-icon my-2;
+  }
+
+
+}

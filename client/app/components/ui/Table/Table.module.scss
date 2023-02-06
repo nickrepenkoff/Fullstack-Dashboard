@@ -1,0 +1,47 @@
+.table {
+  @apply mt-6;
+  .tableItem {
+    @apply flex-center-between flex-wrap bg-white gdark:bg-zinc-700
+    gdark:bg-opacity-60 gdark:text-white w-full py-2 px-4 rounded-md mb-3 relative;
+    box-shadow: 0 4px 10px rgba(45, 8, 125, .2);
+
+    .itemBody {
+      @apply flex items-center gap-5;
+
+      > span > img {
+        @apply rounded;
+      }
+    }
+
+    > div {
+      > a {
+        @apply opacity-75 transition-opacity hover:opacity-100 text-lg;
+      }
+    }
+
+    .actions {
+      @apply flex items-center gap-3;
+      .viewLinkLight {
+        @apply text-primary
+      }
+
+      .viewLinkDark {
+        @apply text-purple-400
+      }
+
+      .editLinkLight {
+        @apply text-blue-500
+      }
+
+      .editLinkDark {
+        @apply text-blue-400
+      }
+
+      > button {
+        @apply opacity-75 transition-opacity hover:opacity-100 text-red-700 gdark:text-red-500 text-lg;
+      }
+    }
+
+
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  @apply block text-xl py-6 transition-transform;
+  outline: none;
+
+  svg {
+    @apply mx-auto gdark:fill-white gdark:opacity-80 gdark:transition-colors;
+    fill: #1c2034;
+  }
+
+  &.light {
+    @apply rotate-180;
+  }
+
+}

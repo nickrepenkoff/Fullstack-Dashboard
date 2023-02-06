@@ -1,0 +1,18 @@
+@import "../../../assets/styles/mixins";
+
+.wrapper {
+  @apply grid;
+  grid-template-columns: 1fr 18fr;
+  height: calc(100vh - 5rem);
+
+  .content {
+    @apply rounded-3xl bg-[#ebeffd] gdark:bg-zinc-800;
+    @include shadow-purple('lg', false);
+    z-index: 1;
+  }
+}
+
+.main {
+  @apply px-6 pt-4 pb-20;
+}
+

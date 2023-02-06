@@ -1,0 +1,8 @@
+.wrapper {
+  @apply mt-10;
+
+  .content {
+    @apply grid gap-8;
+    grid-template-columns: 1fr 3fr;
+  }
+}

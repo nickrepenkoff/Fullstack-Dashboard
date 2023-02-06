@@ -1,0 +1,28 @@
+.item {
+  @apply relative block;
+  width: 14%;
+
+  &:hover {
+    .heading {
+      @apply text-primary gdark:text-purple-400;
+    }
+  }
+
+  .rating {
+    @apply absolute -left-2.5 top-2 bg-green-600 text-white rounded-md py-1 px-4 text-center z-10 text-sm;
+  }
+
+  .poster {
+    @apply rounded-lg overflow-hidden;
+  }
+
+  .heading {
+    @apply text-black mt-3 font-medium transition-colors gdark:text-white;
+  }
+
+  &.small {
+    .heading {
+      font-size: 15px;
+    }
+  }
+}

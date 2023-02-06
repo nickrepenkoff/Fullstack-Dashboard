@@ -1,0 +1,27 @@
+
+:global(.dark) .progress .barOverflow .bar {
+  border: 28px solid rgba(255, 255, 255, .2);
+  border-bottom-color: #b4ff7a;
+  border-right-color: #b4ff7a;
+}
+
+.progress {
+  @apply relative m-1 text-center mb-8;
+
+  .barOverflow {
+    @apply relative overflow-hidden w-52 h-24 mx-auto;
+
+    .bar {
+      @apply absolute top-0 left-0 w-52 h-52 rounded-full box-border;
+      border: 28px solid #fafafa;
+      border-bottom-color: #9ff162;
+      border-right-color: #9ff162;
+    }
+
+  }
+
+  .percent {
+    @apply font-semibold text-2xl -mt-9;
+    color: #fafafa;
+  }
+}
